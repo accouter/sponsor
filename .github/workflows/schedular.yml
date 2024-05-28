@@ -15,7 +15,7 @@ jobs:
       - name: Update sponsors.svg
         run: npx sponsors-svg
         env:
-          SPONSORS_TOKEN: ${{ secrets.SPONSORS_TOKEN }}
+          SPONSORS_TOKEN: ${{ secrets.TOKEN_SPONSORS }}
           SPONSORS_LOGIN: wangkanai
 
       - name: Commit
@@ -24,4 +24,4 @@ jobs:
           message: "chore: update sponsors.svg"
           add: "sponsors.*"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
